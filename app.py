@@ -70,6 +70,7 @@ def welcome():
         f"/api/v1.0/tobs<br/>"
         f"/api/v1.0/start_date<br/>"
         f"/api/v1.0/start_date/end_date<br/>"
+        f"Enter the date as yyyy-mm-dd"
     )
 
 
@@ -92,7 +93,7 @@ def precipitation():
     all_precipation=[]
     for date,prcp in query_2:
         precipation_dict = {}
-        precipation_dict["date"] = prcp
+        precipation_dict[date] = prcp
         all_precipation.append(precipation_dict)
 
     return jsonify(all_precipation)
