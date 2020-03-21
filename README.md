@@ -1,4 +1,4 @@
-# Flask_Alchmey
+# Flask-SQLAlchmey
 # SQLAl--- Surfs Up!
 
 Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
@@ -37,9 +37,7 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
 
   * Which station has the highest number of observations?
 
-  * Hint: You may need to use functions such as `func.min`, `func.max`, `func.avg`, and `func.count` in your queries.
-
-* Design a query to retrieve the last 12 months of temperature observation data (tobs).
+  * Design a query to retrieve the last 12 months of temperature observation data (tobs).
 
   * Filter by the station with the highest number of observations.
 
@@ -103,15 +101,11 @@ design a Flask API based on the queries that you have just developed.
 
   * Use the peak-to-peak (tmax-tmin) value as the y error bar (yerr).
 
-    ![temperature](Images/temperature.png)
-
-### Daily Rainfall Average
+   ### Daily Rainfall Average
 
 * Calculate the rainfall per weather station using the previous year's matching dates.
 
 * Calculate the daily normals. Normals are the averages for the min, avg, and max temperatures.
-
-* You are provided with a function called `daily_normals` that will calculate the daily normals for a specific date. This date string will be in the format `%m-%d`. Be sure to use all historic tobs that match that date string.
 
 * Create a list of dates for your trip in the format `%m-%d`. Use the `daily_normals` function to calculate the normals for each date string and append the results to a list.
 
